@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <p class="helper">Enter your email and password.</p>
+
+    <!-- novalidate: we control when messages appear (via reportValidity / custom UI). -->
+    <form id="loginForm" novalidate>
+      <div class="field">
+        <label for="email">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          autocomplete="username"
+          required
+          placeholder="example@gmail.com"
+        />
+        <div id="emailError" class="error" aria-live="polite"></div>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <div class="pass-wrap">
+          <input
+            id="password"
+            name="password"
+            type="password"
+            autocomplete="current-password"
+            required
+            minlength="8"
+            placeholder="Minimum 8 characters"
+          />
+          <button type="button" class="toggle" id="togglePass">Show</button>
+        </div>
+        <div id="passwordError" class="error" aria-live="polite"></div>
+      </div>
+
+      <div class="row">
+        <label class="checkbox">
+          <input type="checkbox" id="remember" />
+          Remember me
+        </label>
+        <a class="muted-link" href="index.html">Back to Home</a>
+      </div>
+
+      <div class="row" style="margin-top:14px;">
+        <input class="button" type="submit" value="Login">
+        <button class="button" type="reset" style="background:#6b7280;">Reset</button>
+      </div>
+
+  <div class="row" style="margin-top:14px;">
+<a class="muted-link" href="forgot.html">Forgot password?</a>
+  <script src="login.js"></script>
+</body>
+</html>
+<p class="notice">
+  No account? <a class="muted-link" href="signup.html">Signup</a>
+</p>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Forgot Password</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h2>Forgot Password</h2>
+
+    <form id="forgotForm" novalidate>
+      <div class="field">
+        <label>Registered Email</label>
+        <input id="email" type="email" required />
+        <div class="error" id="error"></div>
+      </div>
+
+      <input type="submit" class="button" value="Reset Password" />
+    </form>
+
+    <p class="notice">
+      <a class="muted-link" href="login.html">Back to login</a>
+    </p>
+  </div>
+
+  <script src="forgot.js"></script>
+</body>
+</html>

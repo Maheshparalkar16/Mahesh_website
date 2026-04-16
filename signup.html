@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Create Account</h2>
+    <p class="helper">Use a strong password. You must verify email before login.</p>
+
+    <form id="signupForm" novalidate>
+      <div class="field">
+        <label>Email</label>
+        <input id="email" type="email" required placeholder="you@example.com"/>
+        <div class="error" id="emailErr"></div>
+      </div>
+
+      <div class="field">
+        <label>Password</label>
+        <input id="password" type="password" required minlength="8" placeholder="Min 8 chars"/>
+        <div class="meter"><div id="meterBar"></div></div>
+        <div class="meter-label" id="meterLabel">Strength: —</div>
+        <div class="error" id="passErr"></div>
+      </div>
+
+      <div class="field">
+        <label>Confirm Password</label>
+        <input id="confirm" type="password" required placeholder="Re-type password"/>
+        <div class="error" id="confirmErr"></div>
+      </div>
+
+      <input class="button" type="submit" value="Create Account" />
+
+      <div class="small-box" id="verifyBox" style="display:none;"></div>
+
+      <p class="notice">
+        Already have an account? <a class="muted-link" href="login.html">Login</a>
+      </p>
+    </form>
+  </div>
+
+  <script src="signup.js"></script>
+</body>
+</html>

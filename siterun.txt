@@ -1,0 +1,14 @@
+3) ✅ How to Run (Quick)
+
+In /project/server:
+
+Shellnpm installnpm startShow more lines
+
+Open in browser:
+
+http://localhost:3000
+
+✅ Admin account (seeded):
+
+Email: admin@example.com
+Password: Admin@1234
